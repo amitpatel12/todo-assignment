@@ -15,7 +15,7 @@ because we have not any database so that when user click any button then happen 
 1. make change on the server JSONPlaceholder according to the action
 2.  Also change locally to the state like add, delete, update, checkbox so that changes reflect into the application
 
-## Intract with JSONPlaceholder
+## Interact with JSONPlaceholder
 I follow official documentation for each task
 1. in frontend side i use async await to handle server request and response and for error handling used try and catch block
 2. Get all lists i used (GET method) - https://jsonplaceholder.typicode.com/todos
