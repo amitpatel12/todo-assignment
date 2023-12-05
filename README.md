@@ -11,6 +11,6 @@ https://todo-amit.onrender.com/
 
 
 ## Application State
-because we have not any database so that when user click any button then happen two seperate task
-    1. make change on the server JSONPlaceholder according to the action
-    2. Also change locally to the state like add, delete, update, checkbox so that changes reflect into the application
+because we have not any database so that when user click any button then happen two seperate task ---
+1. make change on the server JSONPlaceholder according to the action
+2.  Also change locally to the state like add, delete, update, checkbox so that changes reflect into the application
