@@ -13,6 +13,7 @@ const TodoList = () => {
     fetchTodos();
   }, []);
 
+  // fetch first 20 list from jsonplaceholder
   const fetchTodos = async () => {
     try {
       const response = await axios.get(
@@ -30,7 +31,7 @@ const TodoList = () => {
     }
   };
 
-
+  // add new todo to the list
   const addTodo = async (e) => {
     e.preventDefault()
     if(!title){
@@ -49,6 +50,7 @@ const TodoList = () => {
     }
   };
 
+  // delete clicked todo with specified id
   const deleteTodo = async (id) => {
     try {
       const result = await axios.delete(
@@ -61,6 +63,7 @@ const TodoList = () => {
     }
   };
 
+  // update todo list
   const updateTodo = async (e, id, text) => {
     e.preventDefault();
     try {
@@ -77,6 +80,7 @@ const TodoList = () => {
     }
   };
 
+  // mark complete or uncomplete todo list
   const markAsComplete = async (id) => {
     try {
       const data = await Promise.all(todos.map(async (todo) => {
@@ -92,7 +96,7 @@ const TodoList = () => {
     
       setTodos(data)
     } catch (error) {
-      console.error("Error updating todo:", error);
+      console.error("Error updating mark todo:", error);
     }
    
   };
@@ -149,6 +153,7 @@ const TodoList = () => {
       
 
       </div>
+      {/* modal for updating list */}
       {edit && (
         <Modal setEdit={setEdit} editTodo={editTodo} updateTodo={updateTodo} />
       )}

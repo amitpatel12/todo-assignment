@@ -1,10 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-const Modal = ({setEdit, editTodo, setEditTodo, updateTodo}) => {
+const Modal = ({setEdit, editTodo, updateTodo}) => {
     const [inputValue, setInputValue] = useState(editTodo.title)
-
-   
 
   return (
     <div className='fixed top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]  overflow-hidden bg-white p-10 shadow-2xl'>
